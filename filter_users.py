@@ -2,6 +2,10 @@ import json
 
 
 def filter_users_by_name(name):
+    """
+    Filtering the users with matching name from json file users.json
+    :param name: Name as string
+    """
     with open("users.json", "r") as file:
         users = json.load(file)
 
@@ -12,6 +16,10 @@ def filter_users_by_name(name):
 
 
 def filter_users_by_age(age):
+    """
+    Filtering the users with matching age from json file users.json
+    :param age: Age as integer
+    """
     with open("users.json", "r") as file:
         users = json.load(file)
 
@@ -22,6 +30,10 @@ def filter_users_by_age(age):
 
 
 def filter_users_by_email(email):
+    """
+    Filtering the users with matching email from json file users.json
+    :param email: email as string
+    """
     with open("users.json", "r") as file:
         users = json.load(file)
 
